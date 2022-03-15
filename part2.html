@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgb(182, 94, 94);
+        }
+        
+        button {
+            padding: 10px;
+            background-color: red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <button onclick="displayDate()">click me to show alert</button>
+    <button onclick="text()">click me to show text</button>
+
+
+    <p id="text"></p>
+    <p id="demo"></p>
+
+
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+
+
+        function text() {
+            document.getElementById("text").innerHTML = ("Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur dolorum accusantium cum aut soluta aliquid ullam cumque vel voluptatibus voluptates modi nobis, quis eos. Velit vel beatae laboriosam consectetur vitae.")
+        }
+    </script>
+</body>
+
+</html>
